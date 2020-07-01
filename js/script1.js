@@ -23,7 +23,9 @@ window.onload = function() {
 	pageContents();
 };
 
-// Show data on page
+/**
+ * Show data on page
+ */
 function pageContents() {
 
 	// Statements
@@ -172,7 +174,9 @@ function pageContents() {
 	}
 }
 
-// Main button functions
+/** 
+ * Main button functions
+*/
 function pro() {
 	for (var i = subjects.length - 1; i >= 0 ; i--) {
 		var x = i + 1;
@@ -236,7 +240,9 @@ function contra() {
 	}
 }
 
-// Display opinions list
+/**
+ * Display opinions list
+ */
 function toggleOpinions() {
 	if (opinions.style.display == 'none') {
 		opinionContainer.className += ' w3-container w3-light-gray';
@@ -249,7 +255,10 @@ function toggleOpinions() {
 	}
 }
 
-// Display opinion explanation
+/**
+ * Display opinion explanation
+ * @param {int} id 
+ */
 function toggleExplanation(id) {
 	for (var j = 0; j < 22; j++) {
 		var exp = document.getElementById('exp' + j);
@@ -264,7 +273,10 @@ function toggleExplanation(id) {
 	}
 }
 
-// Sort arrays
+/**
+ * Sort arrays
+ * @param {*} property 
+ */
 function dynamicSort(property) {
     var sortOrder = 1;
     if(property[0] === "-") {
@@ -280,8 +292,8 @@ function dynamicSort(property) {
     }
 }
 
-/* Get form data
- *
+/**
+ * Get form data
  */
 function findGetParameter(parameterName) {
     var result = null,
@@ -295,3 +307,12 @@ function findGetParameter(parameterName) {
         });
     return result;
 }
+
+/**
+ * Show data of the statement up next
+ */
+function next() {
+	
+}
+
+// dynamisch score toevoegen aan data -> partijen

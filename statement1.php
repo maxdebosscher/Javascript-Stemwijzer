@@ -11,10 +11,10 @@
 	</div>
 
 	<div class="w3-section">
-		<a id="proBtn" onclick="pro()" class="w3-button w3-black w3-hover-cyan" href="statement2.php">Eens</a>
-		<a id="ambivalentBtn" onclick="ambivalent()" class="w3-button w3-black w3-hover-cyan" href="statement2.php">Geen van beide</a>
-		<a id="contraBtn" onclick="contra()" class="w3-button w3-black w3-hover-cyan" href="statement2.php">Oneens</a>
-		<a class="w3-text-grey" href="statement2.php">Sla deze vraag over <i class="fa fa-arrow-right"></i></a>
+		<a id="proBtn" onclick="pro(); next();" class="w3-button w3-black w3-hover-cyan">Eens</a>
+		<a id="ambivalentBtn" onclick="ambivalent(); next();" class="w3-button w3-black w3-hover-cyan">Geen van beide</a>
+		<a id="contraBtn" onclick="contra(); next();" class="w3-button w3-black w3-hover-cyan">Oneens</a>
+		<a class="w3-text-grey" onclick="next();">Sla deze vraag over <i class="fa fa-arrow-right"></i></a>
 	</div>
 </div>
 
